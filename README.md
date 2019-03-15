@@ -58,7 +58,7 @@ Implement the following Design Patterns
             - create a class ‘AttackMission’ (the context) with the following members:
                 - private AttackStrategy strategy;
                 - constructor where you initialize strategy
-                - public vid executeStrategy()
+                - public void executeStrategy()
             - create a class ‘AttackStrategyDemo’ that will contain a main function. Here you will: 
                 - instantiate a new AttackMission(new ArrowAttack())
                 - execute strategy
