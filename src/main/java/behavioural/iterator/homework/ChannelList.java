@@ -27,7 +27,7 @@ public class ChannelList implements Container {
         private int index;
 
         public boolean hasNext() {
-            if ((index < channels.size()) && (index >= 0)) {//aici as vrea sa// testez nextul sa fie diferit de null sau NULL???
+            if (index < channels.size()) {
                 return true;
             }
             return false;
@@ -35,8 +35,7 @@ public class ChannelList implements Container {
 
         public Object next() {
             if (this.hasNext()) {
-                index++;
-                return channels.get(index - 1);
+                return channels.get(index++);
             }
             return null;
         }
